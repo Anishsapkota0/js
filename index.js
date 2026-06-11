@@ -17,3 +17,19 @@ console.log(email)
 console.log(email)
 
 const ROLE="trainer"    //non changing data
+
+
+//derieved data types
+/**
+ * Array
+ * 
+ */
+let l =[];
+let m = new Array();
+
+
+/**
+ * Object / JSON(oop)
+ */
+
+
