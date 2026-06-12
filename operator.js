@@ -54,3 +54,46 @@ console.log(e!==f)
  * Tempelate literals 
  * `${name}`
  */
+
+
+/** 
+ * Object / Array Destructure 
+ */
+
+let numbers =[123,234,34,5,22,78]
+let first = numbers[0]
+let second  = numbers[1]
+let third = numbers[2]
+let fourth  = numbers[3]
+let fifth  = numbers[4]
+
+let [fi,se,th,fo,fif,six]=numbers
+console.log(six)
+
+let productInfo ={
+    pName: "product Name",
+    price : 1234,
+    discount: 12,
+    stock: 15
+}
+ 
+ let {pName,price: amount}=productInfo
+ console.log(pName,amount)
+
+
+/**
+ * Spread and rest operators
+ */
+
+
+const petAnimals =["cat","dog","rabbit","mouse"]
+const wildAnimals =["tiger","lion","elephant"]
+
+let allAnimals =[...petAnimals,...wildAnimals]
+console.log(allAnimals)
+
+
+let allProductInfo ={
+    ...productInfo
+}
+console.log(allProductInfo)
