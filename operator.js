@@ -97,3 +97,23 @@ let allProductInfo ={
     ...productInfo
 }
 console.log(allProductInfo)
+
+
+// shallow copy
+let user1 ={
+    name :"user Name",
+    email:"name1@gmail.com"
+}
+
+let user2 =user1     //copy all references
+
+console.log(user1)
+
+user2.name ="new userName"
+console.log(user1)
+
+// Deep copy 
+let userDeepCopy =JSON.parse(JSON.stringify(user1))
+console.log(user1)
+userDeepCopy.name="anish sapkota"
+console.log(user1)
