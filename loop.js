@@ -66,5 +66,23 @@ for (let user1 of userList){     // for of loop assign objects whereas for in lo
 }
 
 
+let productInformations=[
+    {id :123, name:"product One", price :1000, discountInPercentage : 10},
+    {id :234, name:"product Two", price :2000, discountInPercentage : 3},
+    {id :345, name:"product Three", price :1800, discountInPercentage :7},
+]
+
+for (let i in productInformations){
+    console.log("Product Id: ",productInformations[i].id)
+    console.log("Product name: ",productInformations[i].name)
+    console.log("Product price: Npr. ",productInformations[i].price)
+    console.log("Discount Percentage: ",productInformations[i].discountInPercentage,"%")
+    console.log("Discount Amount: Npr.",productInformations[i].price*(productInformations[i].discountInPercentage)/100)
+    console.log("Product Price after Discount : Npr.",productInformations[i].price-(productInformations[i].price*(productInformations[i].discountInPercentage)/100))
+    console.log("---------------------------------------------------")
+
+}
+
+
 
 
