@@ -84,5 +84,65 @@ for (let i in productInformations){
 }
 
 
+// documents
+let document = [
+    {
+        title : "chapter-1 : Introduction to mern ",
+        sections :[
+            {
+                title:"Section 1.1. what is MERN Stack?",
+                sections:[
+                    {
+                        title:"section 1.1.1 composition of MERN",
+                        sections:null,
+                    },
+                    {
+                        title:"section 1.1.2 Stack: Framework vs Library",
+                        sections:null,
+                    },
+
+                ]
+            }
+        ]
+    },
+    {
+        title : "Chapter-2: Basic Programming concept",
+        sections:[
+            {
+                title:"section 2.1 What is programming",
+                sections:null,
+            },
+            {
+            
+                title:"section 2.2 Introduction to Js",
+                sections:null,
+            
+            }
+        ]
+
+    }
+]
+
+for (let s of document){
+    
+    console.log(s.title)
+    for (let sections1 of s.sections){
+        console.log("   ",sections1.title)
+        if(sections1.sections!==null){
+            for (let section2 of sections1.sections){
+                console.log("       ",section2.title)
+
+        }
+    }
+        
+        
+
+    }
+}
+        
+    
+    
+
+
 
 
