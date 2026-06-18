@@ -30,3 +30,9 @@ function calculator(num1,num2){
 }
 let calculatedValue =calculator(6,2)
 console.log(calculatedValue)
+
+function calculateCartPrice (num1){
+    return num1
+
+}
+console.log(calculateCartPrice(200))
