@@ -16,6 +16,7 @@ const user1 = {
     username: "Abhinav",
     welcomeMessage: function () {
         console.log(`${this.username}, welcome`);
+        console.log(this)
     }
 };
 
@@ -23,5 +24,7 @@ const user2 = {
     username: "Ram",
     welcomeMessage: user1.welcomeMessage
 };
+user2.username ="hyaa"
 user1.welcomeMessage(); // Anish, welcome
 user2.welcomeMessage(); 
+console.log(this)
