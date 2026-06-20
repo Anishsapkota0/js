@@ -67,3 +67,16 @@ function myArray(anyArray){
 myArray(["buffalo","cow"])
 
 // myArray(myNewArray)
+
+
+function one(){
+    const username ="Anish"
+
+    function two(){
+        const website =" youtube"
+        console.log(username)
+    }
+    // console.log(website) s s 
+    two()
+}
+one()
