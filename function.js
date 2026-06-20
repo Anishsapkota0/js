@@ -41,7 +41,7 @@ function spreadOperator(num2,...num1){
     return num1+ num2
 }
 
-console.log(spreadOperator(100,300,400,56,76,77,89))
+// console.log(spreadOperator(100,300,400,56,76,77,89))
 
 const user ={
     username:"anish",
@@ -52,11 +52,12 @@ function handleUser (anyobject){
     console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
 }
 
+
 // handleUser(user)
-handleUser({
-    username:"shyam",
-    price:200
-})
+// handleUser({
+//     username:"shyam",
+//     price:200
+// })
 
 const myNewArray =["anish","anil","gajendra","babit","Bhanu"]
 
@@ -64,7 +65,7 @@ function myArray(anyArray){
     console.log(anyArray[1])
 }
 
-myArray(["buffalo","cow"])
+// myArray(["buffalo","cow"])
 
 // myArray(myNewArray)
 
@@ -79,4 +80,29 @@ function one(){
     // console.log(website) s s 
     two()
 }
-one()
+// one()
+
+// if (true){
+//     const username = "hitesh"
+//     if (username === "hitesh"){
+//         const website =" youtube"
+//         console.log(username+website)
+//     }
+//     // console.log(website)
+// }
+// console.log(username)
+
+// +++++++++++interesting++++++++++++
+console.log(addone(5))   //hoisting
+function addone(num){
+    return num+1
+
+}
+console.log(addone(5))
+
+const addTwo =function(num)
+{
+    return num+2
+}
+
+console.log(addTwo(9))
