@@ -13,7 +13,7 @@ function addTwoNumbers(number1,number2){
    return result
 }
 let r = addTwoNumbers(2,30)
-console.log(r)
+// console.log(r)
 
 function calculator(num1,num2){
     let addition = num1 + num2
@@ -28,11 +28,17 @@ function calculator(num1,num2){
                   `ModuloDivision of ${num1} and ${num2} is  ${moduloDivision}`]
     return result
 }
-let calculatedValue =calculator(6,2)
-console.log(calculatedValue)
+// let calculatedValue =calculator(6,2)
+// console.log(calculatedValue)
 
 function calculateCartPrice (num1){
     return num1
 
 }
-console.log(calculateCartPrice(200))
+// console.log(calculateCartPrice(200))
+
+function spreadOperator(num2,...num1){
+    return num1+ " "num2
+}
+
+console.log(spreadOperator(100,300,400,56,76,77,89))
