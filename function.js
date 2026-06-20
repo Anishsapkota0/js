@@ -38,7 +38,32 @@ function calculateCartPrice (num1){
 // console.log(calculateCartPrice(200))
 
 function spreadOperator(num2,...num1){
-    return num1+ " "num2
+    return num1+ num2
 }
 
 console.log(spreadOperator(100,300,400,56,76,77,89))
+
+const user ={
+    username:"anish",
+    price: 199
+}
+
+function handleUser (anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+// handleUser(user)
+handleUser({
+    username:"shyam",
+    price:200
+})
+
+const myNewArray =["anish","anil","gajendra","babit","Bhanu"]
+
+function myArray(anyArray){
+    console.log(anyArray[1])
+}
+
+myArray(["buffalo","cow"])
+
+// myArray(myNewArray)
