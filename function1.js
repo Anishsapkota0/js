@@ -28,3 +28,26 @@ user2.username ="hyaa"
 user1.welcomeMessage(); // Anish, welcome
 user2.welcomeMessage(); 
 console.log(this)
+
+// const chai=function(){
+//     let username = "hitesh"
+//     console.log(this.username)
+// }
+
+
+
+// const chai= function (){
+//     let username="jesre"
+//     console.log(this.username)
+// }
+// chai()
+
+const chai =()=>{
+       let username="jesre"
+       console.log(this)
+
+}
+chai()
+
+
+
