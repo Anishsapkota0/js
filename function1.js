@@ -47,7 +47,22 @@ const chai =()=>{
        console.log(this)
 
 }
-chai()
+// chai()
+
+const addTwo =(num1,num2)=>{
+    return num1+num2
+
+}
+console.log(addTwo(2000,299.9999))
+
+
+const addThree = (num1,num2,num3) => num1+num2+num3;
+console.log(addThree(1,2,3))
+
+function addFour(num1,num2,num3,num4){
+     return (num1+num2+num3+num4)
+}
+console.log(addFour(1,2,3,4))
 
 
 
