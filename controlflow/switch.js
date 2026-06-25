@@ -11,3 +11,22 @@ switch(day){
     
 
 }
+
+
+let userObj = {
+    name : "anish sapkota",
+    phone: "9868828797"
+}
+let a=Object.keys(userObj).length
+
+if (a===0){
+    console.log("it is truthy value")
+}
+
+//Nullish coalescing operator(??): null defined
+let val1
+// val1 =5 ?? 10
+val1= null?? 10
+console.log(val1)
+
+
