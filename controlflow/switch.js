@@ -29,4 +29,10 @@ let val1
 val1= null?? 10
 console.log(val1)
 
+// Ternary operaror
+//condition ? true : false
+
+const iceTeaPrice =80;
+(iceTeaPrice >= 90) ? console.log("price is greater than 90"):console.log("price is less than 90")
+
 
