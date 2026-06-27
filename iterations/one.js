@@ -4,7 +4,8 @@ for (let i=0; i<=10; i++){
     if(i==0){
 
     }
-    else if{
+    else if(i==5){
+        console.log(`${i} is the best number`)
 
     }else{
     console.log(i)
