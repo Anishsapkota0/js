@@ -31,10 +31,31 @@
 //     }
 // }
 
-for (let i=1;i<=10;i++){
-    console.log("----------------------------")
-    console.log("Multiplication table of ",i)
-    for (let j=1 ; j<=10 ; j++){
-        console.log(`  ${i}   *   ${j}     =     ${i*j}   `)} 
+// for (let i=1;i<=10;i++){
+//     console.log("----------------------------")
+//     console.log("Multiplication table of ",i)
+//     for (let j=1 ; j<=10 ; j++){
+//         console.log(`  ${i}   *   ${j}     =     ${i*j}   `)} 
             
-    }
+//     }
+
+let index=0
+while(index<=10){
+    console.log(index)
+    index++
+}
+
+let myArray =["Gajendra","Anil","Anish","Abhinav","Babit","Bhanu"]
+ let len=myArray.length
+// let i=0
+// while(i<len){
+//     console.log(myArray[i])
+//     i++
+
+// }
+let arr=0
+do{
+    console.log(myArray[arr])
+    arr++
+
+}while(arr<len)
