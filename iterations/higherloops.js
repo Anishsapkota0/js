@@ -78,4 +78,6 @@ const myCoding =[
 
     },
     ]
-myCoding.forEach(printMe)
+myCoding.forEach((item,index,arr)=>{
+    console.log(item.languageFileName,index,arr)
+})
