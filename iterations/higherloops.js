@@ -39,3 +39,11 @@ for (let key in myObject){
 for (let  keys in map){
     console.log(keys)
 }
+
+
+
+const coding =["js","ruby","java","Python","C++"]
+
+coding.forEach(  function (item){
+    console.log(item)
+})
