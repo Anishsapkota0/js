@@ -101,9 +101,51 @@ const updatedNumbers=myNumbers.map((num)=>{
 const newNum = myNumbers
         .map((num)=>(num*10))
         .map((num)=>(num+10))
+        .filter((num)=>(num>40))
       
 console.log(newNum)
 
+
+
+const arr1=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+
+const initialValue =0
+const sumWithinitial = arr1.reduce((accumulator, currentValue)=>{
+  console.log(`accumulator ${accumulator},
+   current value ${currentValue}`)
+  return accumulator+currentValue
+
+},0)
+console.log(sumWithinitial)
+
+
+const shoppingCart =[
+  {
+    itemName:"JS course",
+    Price:2999
+
+  },
+  {
+    itemName:"Python",
+    Price:999
+  },
+  {
+    itemName:"AI",
+    Price:8999
+  },
+  {
+    itemName:"Data Science",
+    Price:12999
+  }
+]
+
+let Prices=shoppingCart
+        .map((value)=>value.Price)
+        .reduce((acc,curr)=>(acc+curr),0)
+
+console.log(Prices)
+        
+// console.log("Total price for your course is ",totalSum)
 
 
 
