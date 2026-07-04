@@ -96,5 +96,14 @@ const updatedNumbers=myNumbers.map((num)=>{
     return num+10
 
 })
-console.log(updatedNumbers)
+// console.log(updatedNumbers)
+
+const newNum = myNumbers
+        .map((num)=>(num*10))
+        .map((num)=>(num+10))
+      
+console.log(newNum)
+
+
+
 
