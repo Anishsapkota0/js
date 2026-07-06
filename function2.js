@@ -15,3 +15,26 @@ const sumUpTo=(n)=>{
 }
 console.log(sumUpTo(30))
 
+// Types of functions 
+  /**
+   * Built in 
+   * custom /user defined
+   */
+
+const func1= () =>  true
+
+
+const func2=(x)=>{
+    if(x){
+        console.log("Iam inside function if")
+    }
+    else{
+        console.log("Iam inside else")
+    }
+}
+
+let result= func1()
+func2(result)
+
+// If we define function within another function then it is called clouser property
+
