@@ -38,3 +38,14 @@ func2(result)
 
 // If we define function within another function then it is called clouser property
 
+function outer(){
+    let username ="Anish"
+    function inner(){
+        console.log("Inner",username)
+    }
+    inner()
+
+}
+outer()
+// console.log(username)
+
