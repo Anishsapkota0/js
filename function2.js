@@ -49,3 +49,8 @@ function outer(){
 outer()
 // console.log(username)
 
+
+
+//CLosure 
+
+
