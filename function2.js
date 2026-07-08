@@ -54,5 +54,19 @@ outer()
 //CLosure 
 
 
+//print 1 to 10 without using loop but using recursion
 
+const toPrint=(num)=>{
+    if(num===0){
+        return
+    }
+    else{
+    toPrint(num-1)
+    console.log(num)
+}
+
+
+    }
+
+toPrint(5)
 
