@@ -70,3 +70,16 @@ const toPrint=(num)=>{
 
 toPrint(5)
 
+
+//call back function
+const abc=()=>{
+    console.log("Iam in abc")
+}
+
+const xyz = () =>{
+    console.log("Iam in xyz")
+}
+
+
+abc()
+xyz()
