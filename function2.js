@@ -72,14 +72,13 @@ toPrint(5)
 
 
 //call back function
-const abc=()=>{
+const abc=(callback)=>{
     console.log("Iam in abc")
+    callback()
 }
 
 const xyz = () =>{
     console.log("Iam in xyz")
 }
 
-
-abc()
-xyz()
+abc(xyz)
