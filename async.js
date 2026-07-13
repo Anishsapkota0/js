@@ -53,3 +53,17 @@ let sum1= nums.reduce((prev,val,ind)=>{
 
 },0)
 console.log(sum1)
+let result = nums.every((val)=>{
+    return val>1
+
+})
+
+console.log(result)
+
+
+let result1 = nums.some((val)=>{
+    return val>1
+
+})
+
+console.log(result1)
