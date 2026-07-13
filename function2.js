@@ -82,3 +82,15 @@ const xyz = () =>{
 }
 
 abc(xyz)
+
+
+const sum2= (callback,x,y)=>{
+    let sum1 = x+y
+    callback(sum1)
+}
+
+const display = (result)=>{
+    console.log(result)
+}
+
+sum2(display,200,400)
