@@ -6,3 +6,14 @@ console.log("i am here")
 // setInterval(()=>{
 // console.log("i am executed on each of three seconds")
 // },3000)
+
+
+
+//Promises 
+// 3 stages 
+/**
+ * pending-----> execution
+ * fulfilled/reject ----> operational/return
+ * settlement -----> Final 
+ */
+
