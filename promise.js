@@ -17,3 +17,7 @@ console.log("i am here")
  * settlement -----> Final 
  */
 
+let myvar =new Promise((resolve,reject)=>{
+    resolve()
+
+})
