@@ -50,25 +50,25 @@ const login=(username,password)=>{
 
 
 
-login("admin","admi")
-.then((resolveData)=>{
-    console.log(resolveData)
-})
-.catch((err)=>{
-    console.log(err)
+// login("admin","admi")
+// .then((resolveData)=>{
+//     console.log(resolveData)
+// })
+// .catch((err)=>{
+//     console.log(err)
 
-})
+// })
 
-login("admin","admin")
-.then((resolveData)=>{
-    console.log(resolveData)
-})
-.catch((err)=>{
-    console.log(err)
+// login("admin","admin")
+// .then((resolveData)=>{
+//     console.log(resolveData)
+// })
+// .catch((err)=>{
+//     console.log(err)
 
-})
+// })
 
-const functionONe=(data)=>{
+const functionOne=(data)=>{
     return new Promise((res,rej)=>{
         if(data){
             res("Iam from function one")
@@ -105,36 +105,62 @@ const functionThree=(data)=>{
 
 
 
-functionONe(true)
-.then((resolveData)=>{
-    console.log(resolveData)
+// functionONe(true)
+// .then((resolveData)=>{
+//     console.log(resolveData)
 
-})
-.catch((error)=>{
-    console.log(error)
+// })
+// .catch((error)=>{
+//     console.log(error)
 
-})
-
-
-functionTwo(false)
-.then((resolveData)=>{
-    console.log(resolveData)
-
-})
-.catch((error)=>{
-    console.log(error)
-
-})
-
-functionThree(true)
-.then((resolveData)=>{
-    console.log(resolveData)
-
-})
-.catch((error)=>{
-    console.log(error)
-
-})
+// })
 
 
+// functionTwo(false)
+// .then((resolveData)=>{
+//     console.log(resolveData)
 
+// })
+// .catch((error)=>{
+//     console.log(error)
+
+// })
+
+// functionThree(true)
+// .then((resolveData)=>{
+//     console.log(resolveData)
+
+// })
+// .catch((error)=>{
+//     console.log(error)
+
+// })
+
+
+
+// const functionOne = async(x)=>{
+//     if (x){
+//         return " I am from function one"
+//     }
+//     else{
+//         throw " I am rejected from function one"
+
+//     }
+
+// }
+
+
+const handler=async()=>{
+    try{
+    let resolveOne =await functionOne(true)
+    console.log(resolveOne)
+    let resolveTwo =await functionTwo(true)
+    console.log(resolveTwo)
+    let resolveThree =await functionThree(false)
+    console.log(resolveThree)  
+    }  catch(exception) {
+        console.log(exception)
+
+    }
+}
+handler()
