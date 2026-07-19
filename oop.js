@@ -1,6 +1,6 @@
 class ToyotaCar {
     constructor(brand){
-        console.log("Creating new object......")
+        console.log("enter parent constructor")
         this.brand =brand
     }
    start(){
@@ -12,8 +12,8 @@ class ToyotaCar {
    }
 }
 
-let fortuner =new ToyotaCar("fortuner")
-console.log(fortuner)
+// let fortuner =new ToyotaCar("fortuner")
+// console.log(fortuner)
 
 // console.log(fortuner.start())
 
@@ -26,8 +26,9 @@ console.log(fortuner)
 
 class Person {
 
-    constructor(){
-        this.species = "Homo Sapiens"
+    constructor(name){
+        this.name = name
+        console.log("enter parent constructor")
     }
     eat(){
         console.log("Eat")
@@ -41,7 +42,13 @@ class Person {
 }
 
 class Engineer extends Person{
+    constructor(name){
+        console.log("enter child constructor")
+        super(name)   //to invoke parent class constructor
+        console.log("exit child constructor")
+    }
     work(){
+        super.eat()
         console.log("solve problems,build somethings")
     }
 }
@@ -52,9 +59,7 @@ class Doctor extends Person{
     }
 }
 
-let anishObj= new Engineer()
-anishObj.eat()
+let anishObj= new Engineer("chemical enginner")
+anishObj.work()
 
 
-let p1 = new Person()
-console.log(p1)
